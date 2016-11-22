@@ -4,7 +4,7 @@ This source code goes along with the "Getting Your Head Around Modern Web for AS
 
 ## This application consists of:
 
-Web site written with Angular 2 which calls RES services for data.
+Web site written with Angular 2 which calls REST services for data.
 
 ## For more information about the training session:
 

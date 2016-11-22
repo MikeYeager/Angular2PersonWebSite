@@ -1,0 +1,14 @@
+<h2>People</h2>
+
+<div>
+	<input [(ngModel)]=searchText placeholder="search">
+	<button (click)="search()">Search</button>
+</div>
+
+<ul class="people">
+	<li *ngFor="let person of people" 
+        [class.selected]="person === selectedPerson" 
+        (click)="onSelect(person)">
+		{{person.FirstName}} {{person.LastName}} {{person.Email}}
+	</li>
+</ul>

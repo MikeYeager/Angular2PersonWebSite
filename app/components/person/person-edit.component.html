@@ -1,0 +1,23 @@
+<div *ngIf="person">
+	<h2>{{person.FirstName}} {{person.LastName}}'s details!</h2>
+
+	<div>
+		<label>Id: </label> {{person.Id}}
+	</div>
+	<div>
+		<label>Name: </label>
+		<input [(ngModel)]=person.FirstName placeholder="first name">
+		<input [(ngModel)]=person.LastName placeholder="last name">
+	</div>
+	<div>
+		<label>Email: </label>
+		<input [(ngModel)]=person.Email placeholder="email">
+	</div>
+	<div>
+		<label>Phone: </label>
+		<input [(ngModel)]=person.Phone placeholder="phone">
+	</div>
+
+	<button (click)="goBack()">Back</button>
+	<button (click)="save()">Save</button>
+</div>
